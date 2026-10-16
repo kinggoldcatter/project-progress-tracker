@@ -1,30 +1,7 @@
 <h2>Progress Notes</h2>
 
-<form [formGroup]="ProgressForm">
+<label for="progress-note">Progress Note:</label>
 
-  <div>
-    <label for="project-name">Project Name:</label>
-    <input id="project-name" type="text" formControlName="projectName">
-  </div>
+<input id="progress-note" type="text" [(ngModel)]="progressNote">
 
-  <div>
-    <label for="date">Date:</label>
-    <input id="date" type="date" formControlName="date">
-  </div>
-
-  <div>
-    <label for="current-status">Current Status:</label>
-    <input id="current-status" type="text" formControlName="currentStatus">
-  </div>
-
-  <div>
-    <label for="team-member">Team Member:</label>
-    <input id="team-member" type="text" formControlName="teamMember">
-  </div>
-
-  <div>
-    <label for="progress-note">Progress Note:</label>
-    <input id="progress-note" type="text" formControlName="progressNote">
-  </div>
-
-</form>
+<p>Current Note: {{ progressNote }}</p>
