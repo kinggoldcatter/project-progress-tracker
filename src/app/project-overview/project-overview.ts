@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 })
 
 export class ProjectOverview {
-
+  projectName = 'Project Progress Tracker';
+  projectStatus = 'In Progress';
 }
