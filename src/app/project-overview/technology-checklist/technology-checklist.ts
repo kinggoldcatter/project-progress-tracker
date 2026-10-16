@@ -9,9 +9,16 @@ import { Component } from '@angular/core';
 export class TechnologyChecklist {
   checklistComplete = false;
   buttonName = 'Mark Checklist Completel';
+
+  hoverMessage = '';
+
   completeChecklist() {
     this.checklistComplete = true;
     this.buttonName = 'Checklist Completed';
+  }
+
+  showMessage() {
+    this.hoverMessage = 'Review the checklist before marking it complete.';
   }
 }
 
