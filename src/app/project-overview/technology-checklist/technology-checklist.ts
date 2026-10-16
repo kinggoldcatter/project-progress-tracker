@@ -9,5 +9,9 @@ import { Component } from '@angular/core';
 export class TechnologyChecklist {
   checklistComplete = false;
   buttonName = 'Mark Checklist Completel';
+  completeChecklist() {
+    this.checklistComplete = true;
+    this.buttonName = 'Checklist Completed';
+  }
 }
 
