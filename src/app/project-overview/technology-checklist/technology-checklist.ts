@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './technology-checklist.css',
   templateUrl: './technology-checklist.html',
 })
-export class TechnologyChecklist {}
+export class TechnologyChecklist {
+  checklistComplete = false;
+  buttonName = 'Mark Checklist Completel';
+}
+
