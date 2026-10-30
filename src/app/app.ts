@@ -4,13 +4,17 @@ import { MilestoneTracker } from './milestone-tracker/milestone-tracker';
 import { ProgressNotes } from './progress-notes/progress-notes';
 import { ProjectOverview } from './project-overview/project-overview';
 import { TechnologyChecklist } from './project-overview/technology-checklist/technology-checklist';
+import { ProjectTaskManager } from './project-task-manager/project-task-manager';
+import { MilestoneApi } from './milestone-api/milestone-api';
 @Component({
   imports: [
     RouterOutlet,
     MilestoneTracker,
     ProgressNotes,
     ProjectOverview,
-    TechnologyChecklist
+    TechnologyChecklist,
+    ProjectTaskManager,
+    MilestoneApi
     ],
   selector: 'app-root',
   styleUrl: './app.css',

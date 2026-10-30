@@ -14,13 +14,25 @@ import {
 })
 export class ProgressNotes {
 
-  progressNote = '';
+  progressNote = 'Initial progress note';
 
-  ProgressForm = new FormGroup({
-      projectName: new FormControl(''),
-      date: new FormControl(''),
-      currentStatus: new FormControl('Completed'),
-      teamMember: new FormControl(''),
-      progressNote: new FormControl('')
+  // ProgressForm = new FormGroup({
+  //     projectName: new FormControl(''),
+  //     date: new FormControl(''),
+  //     currentStatus: new FormControl('Completed'),
+  //     teamMember: new FormControl(''),
+  //     progressNote: new FormControl('')
 
-  });}
+  // });
+
+  projectName2 = 'help';
+  projectCode = new FormControl();
+
+  codeInput() {
+    this.projectName2 = this.projectCode.value
+   switch (this.projectCode.value) {
+     case 'PPT101':
+        this.projectName2 = 'Project Progress Tracker'
+   };
+  }
+}
